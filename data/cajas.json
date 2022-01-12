@@ -1,0 +1,39 @@
+[
+    {
+       "id":1,
+       "nombre":"Caja Mediana Simple",
+       "precio":2000,
+       "imagen":"./Imagenes/cajas/caja_01.gif"
+    },
+    {
+       "id":2,
+       "nombre":"Caja Mediana Reforzada",
+       "precio":3800,
+       "imagen":"./Imagenes/cajas/caja_02.gif"
+    },
+    {
+       "id":3,
+       "nombre":"Caja Mediana Con Llave",
+       "precio":3200,
+       "imagen":"./Imagenes/cajas/caja_03.gif"
+    },
+    {
+       "id":4,
+       "nombre":"Caja Fuerte Con Tesoro",
+       "precio":1500,
+       "imagen":"./Imagenes/cajas/caja_04.gif"
+    },
+    {
+       "id":5,
+       "nombre":"Caja Fuerte Tipo Archivo",
+       "precio":5000,
+       "imagen":"./Imagenes/cajas/caja_05.gif"
+    },
+    {
+       "id":6,
+       "nombre":"Caja Fuerte Para Abulonar",
+       "precio":1500,
+       "imagen":"./Imagenes/cajas/caja_06.gif"
+    }
+
+]

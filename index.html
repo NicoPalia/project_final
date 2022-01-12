@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- BOOSTRAP LIBRARY -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+		integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+	<!-- CSS LIBRARY-->
+	<link rel="stylesheet" href="./css/styles.css">
+	<!-- GOOGLE FONT -->
+	<link
+		href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+		rel="stylesheet">
+	<!-- ICON TOP  -->
+	<link rel="icon" type="image/png" href="./Imagenes/Fondo y logo/logo.png">
+	<title>La Boveda</title>
+</head>
+
+<body>
+
+	<section id="topPage">
+		<div class="container-fluid top-section">
+
+			<nav class="navbar navbar-expand-lg navbar-dark">
+				<img src="./Imagenes/fondo_logo/logo.png" alt="" href="#topPage" width="25%">
+
+				<button class="navbar-toggler bg-primary" type="button" data-toggle="collapse"
+					data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+					aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+					<ul class="navbar-nav ml-auto">
+						<li class="nav-item"><a class="nav-link" href="#service" style="color: white;">Servicios</a>
+						</li>
+						<li class="nav-item"><a class="nav-link" href="#middlePage" style="color: white;">Tienda</a>
+						</li>
+                        <li class="nav-item"><a class="nav-link" href="#contactMe" style="color: white;">Contacto</a>
+                        <li><a class="nav-link" id="carritoNumero"><i class="fas fa-shopping-cart fa-1x"></i>  <span id="numero-productos">0</span></a>
+                        </li>
+                        <li>
+                            <button id="btnLightMode" class="btnLightMode btn btn-light"><i class="fas fa-sun"></i></button>
+                            <button id="btnDarkMode" class="btnDarkMode btn btn-dark"><i class="fas fa-moon"></i></button>
+                        </li>
+					</ul>
+				</div>
+			</nav>
+			<div class="top-text">
+				<h1>¿ QUIÉNES SOMOS ?</h1>
+				<h4><em>Somos una empresa dedicada a la seguridad de nuestros clientes.</em></h4>
+                <h4><em>Ya sea cerrajería de casas, automóviles, cajas fuertes y todo lo que tenga que ver con herrajes.</em></h4>
+                <h4><em>Contamos con mas de 30 años en el rubro de cerrajería, herrajes y cajas fuertes.</em></h4>
+                <h4><em>Contamos también con experiencia en fabricar cajas fuertes a medida o para diferentes usos o negocios.</em></h4>
+			</div>
+		</div>
+	</section>
+
+	<section id="middlePage">
+		<div class="container-fluid middle-section">
+            <h3> PRODUCTOS SELECCIONADOS </h3>
+            <h5> Especializados en la seguridad de nuestros clientes </h5>
+                <div class="cajasDOM grid-container" id="cajasDOM">
+                </div>
+		</div>
+	</section>
+
+	<section id="service">
+		<div class="container-fluid service-section">
+			<div class="container service-container">
+                <table style="width: 100%;">
+                    <th>
+                        <h1> Servicios </h1>
+                        <h5>Alguno de los servicios que ofrecemos son</h5>
+                        <ul class="service-list">
+                            <li>Todo tipo de reparación o instalación en cerrajería aplicada a cajas bancarias, comerciales o domiciliarias.</li>
+                            <li>Cambios de combinación y de clave de todo tipo de cerraduras mecánicas, electrónicas nacionales o importadas.</li>
+                            <li>Apertura de todo tipo de cajas de seguridad nacionales o importadas.</li>
+                            <li>Reparación de cajas violentadas con opción a mejorar las características técnicas que traia de fábrica.</li>
+                            <li>Provisión, instalación y reemplazo de cerraduras mecánicas, electrónicas y de llave.</li>
+                            <li>Mantenimiento periódico preventivo de todo tipo de cajas de seguridad, nuestras o de terceros.</li>
+                            <li>Corte y desguace de todo tipo de cajas o armarios ignífugos en desuso.</li>
+                            <li>Traslados y movimientos internos de cualquier tipo de caja de seguridad.</li>
+                            <li>Más de 30 años de experiencia avalan nuestros trabajos.</li>
+                        </ul>
+                    </th>
+                    <th>
+                        <img src="./Imagenes/fondo_logo/Servicios.png" alt="">
+                        <br>
+                        <a href="#contactMe"><button class="btn btn-dark"> Contactanos </button></a> 
+                    </th>
+                </table>
+			</div>
+		</div>
+	</section>
+
+    <section id="contactMe">
+        <div class="container-fluid contactMe">
+
+			<div class="container">
+                <!-- PONER EL FORMULARIO PARA DEJAR COMENTARIOS -->
+                <h1>Ayudanos a Mejorar el servicio</h1>
+                <h5>Dejanos tus comentarios y te responderemos lo más pronto posible</h5>
+				<br>
+                <button id="botonComentario" class="btn btn-dark">Deja un Comentario</button><br><br>
+                </div>
+                    <div class="container" style="color: white;">
+                        <form id="formCliente">
+                        <div id="divComentario" class="hide">
+													<div class="mb-3">
+									          <label for="nombre" class="form-label">Nombre</label>
+									          <input type="text" class="form-control" id="nombre" name="nombre" >
+									        </div>
+									        <div class="mb-3">
+									            <label for="apellido" class="form-label">Apellido</label>
+									            <input type="text" class="form-control" id="apellido" name="apellido" >
+									          </div>
+									          <div class="mb-3">
+									            <label for="email" class="form-label">Email</label>
+									            <input type="email" class="form-control" id="email" name="email" >
+									          </div>
+									          <div class="mb-3">
+									            <label for="comentario" class="form-label">Comentario</label>
+									            <input type="text" class="form-control" id="comentario" name="comentario" >
+									          </div>
+									        <button type="submit" class="btn btn-primary">Cargar Comentario</button><br><br>
+
+												</div>
+                        </form>
+                    </div>
+                <div class="coment-container">
+                <button id="botonClientes" class="btn btn-dark">Mostrar Comentarios</button><br><br>
+                <div id="divClientes" class="row"></div>
+                </div>
+			</div>
+		</div>
+    </section>
+
+	<section id="footer">
+		<hr>
+		<div class="container-fluid footerPage">
+			<div class="footer-link">
+				<br>
+				<a><i class="fas fa-phone fa-1x"></i>  (0387) 423-1513</a>
+				<a><i class="fab fa-whatsapp"></i>  (0387) 15-6142920</i></a>
+				<a><i class="far fa-envelope"></i>  labovedaseguridad@hotmail.com.ar</a>
+				<br>
+				<br>
+				<br>
+				<p> 2022 © La Boveda</p>
+			</div>
+		</div>
+	</section>
+</body>
+	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+		integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+		crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+		integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+		crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+		integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+		crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+    <!-- FONT AWESOME -->
+	<script src="https://use.fontawesome.com/releases/v5.14.0/js/all.js" data-auto-replace-svg="nest"></script>
+
+    <!-- SCRIPT PARA CARGAR LOS PRODUCTOS -->
+    <script src="./js/cargarProductos.js"></script>
+
+    <!-- SCRIPT PARA ANIMACIONES  -->
+    <script src="./js/animaciones.js"></script>
+
+    <!-- SCRIPT PARA COMENTARIOS -->
+    <script src="./js/comentarios.js"></script>
+
+</html>

@@ -1,0 +1,180 @@
+body {
+	font-family: "Hahmlet", sans-serif;
+	text-align: center;
+	background-color: white;
+}
+
+h1, h3, h4, h5{
+	color: white;
+}
+
+h1, h3, h4, h5{
+	color: white;
+}
+
+/* TOP PAGE SECTION */
+
+.top-section {
+	padding-bottom: 170px;
+    background-image: url("../Imagenes/fondo_logo/fondo_final.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.top-text {
+	background-color: transparent;
+	height: 300px;
+	position: relative;
+	padding-top: 150px
+}
+
+.top-img {
+	background-color: transparent;
+	position: relative;
+	bottom: 10px;
+}
+
+.overlay {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 40%;
+	right: 0;
+	height: auto;
+	width: 20%;
+	opacity: 0;
+	transition: .1s ease;
+}
+
+.top-img:hover .overlay {
+	opacity: 1;
+}
+
+/* ------------------------------------- */
+
+
+/* MIDDLE PAGE SECTION */
+
+.middle-section {
+    padding-top: 20px;
+	background-color: black;
+    padding-bottom: 100px;
+}
+
+.darkMode .middle-section{
+	background-color: white;
+	color: black;
+}
+
+.darkMode .middle-section h2, .darkMode .middle-section h3, .darkMode .middle-section h5, .darkMode .middle-section p{
+	color: black;
+
+}
+
+
+.grid-container{
+    width: 100%;
+    padding: 1rem;
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-auto-rows: minmax(300px, auto);
+    gap: 5px;
+    justify-items: center;
+}
+
+.pricing-column {
+	padding: 3% 2%;
+}
+
+.cards {
+	background-color: transparent;
+	margin-top: 90px;
+	padding-bottom: 100px;
+}
+
+.hide{
+	display: none;
+}
+
+/* -------------------------------------- */
+
+/* SERVICE SECTION */
+
+.service-section {
+    background-image: url("../Imagenes/fondo_logo/Servicios.jpg");
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.service-list {
+    text-align: justify;
+    color: white;
+
+}
+
+.service-container {
+    width: fit-content;
+}
+
+/* CONTACT TO ME */
+
+#hr2 {
+	border: solid;
+	color: cornflowerblue;
+	margin-left: 40%;
+}
+.contactMe {
+	background-color: black;
+	padding-top: 150px;
+	padding-bottom: 200px;
+	margin-right: 80px;
+}
+
+.coment-container {
+    text-align: center;
+}
+/* --------------------------------------- */
+
+
+/* FOOTER PAGE SECTION */
+
+.footer-link {
+	text-align: center;
+	background-color: primary;
+	padding-top: 30px;
+	padding-bottom: 10px;
+
+}
+
+a {
+	margin: 10px 20px;
+	text-decoration: none;
+}
+
+
+/* MEDIA QUERY BREAKPOINTS */
+
+@media (max-width: 900px)
+{
+	h1 {
+		color: black;
+	}
+
+	.icon-facu {
+		width: 40%;
+	}
+
+	.overlay {
+		width: 40%;
+		left: 30%;
+	}
+
+	.pricing-column {
+		padding: 10% 10%;
+	}
+
+	.contactMe {
+		text-align: right;
+		padding-top: 0px;
+	}
+}
