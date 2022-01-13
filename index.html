@@ -38,9 +38,39 @@
 						<li class="nav-item"><a class="nav-link" href="#middlePage" style="color: white;">Tienda</a>
 						</li>
                         <li class="nav-item"><a class="nav-link" href="#contactMe" style="color: white;">Contacto</a>
-                        <li><a class="nav-link" id="carritoNumero"><i class="fas fa-shopping-cart fa-1x"></i>  <span id="numero-productos">0</span></a>
-                        </li>
-                        <li>
+                        
+						
+							<li class="nav-item">
+						
+								<button class="nav-link btn btn-dark" id="carritoNumero" data-bs-toggle="modal" data-bs-target="#modalCarrito"><i class="fas fa-shopping-cart fa-1x"></i>  <span id="numero-productos">0</span></button>
+							
+							</li>
+
+							<!-- MODAL CARRITO -->
+							<div class="modal fade" id="modalCarrito" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+								<div class="modal-dialog">
+								  <div class="modal-content">
+									<div class="modal-header">
+									  <h5 class="modal-title" id="exampleModalLabel">Carrito</h5>
+									  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+									</div>
+									<div class="modal-body" id="carritoBody">
+									 Tus Productos
+									</div>
+									<div class="modal-footer">
+									  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Continuar</button>
+									  <button type="button" class="btn btn-primary">Terminar</button>
+									</div>
+								  </div>
+								</div>
+							  </div>
+
+
+
+
+
+						
+						<li>
                             <button id="btnLightMode" class="btnLightMode btn btn-light"><i class="fas fa-sun"></i></button>
                             <button id="btnDarkMode" class="btnDarkMode btn btn-dark"><i class="fas fa-moon"></i></button>
                         </li>
@@ -178,4 +208,4 @@
     <!-- SCRIPT PARA COMENTARIOS -->
     <script src="./js/comentarios.js"></script>
 
-</html>
+	</html>
