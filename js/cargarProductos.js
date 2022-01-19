@@ -12,7 +12,7 @@ $.getJSON(url, function(response, state){
 
         // GUARDAR "datos" EN EL ARRAY "cajas" CON SUS ATRIBUTOS Y FUNCIONES DEL CONTRUCTOR "caja"
         for(let item of datos){
-            cajas.push(new caja(item.id, item.nombre, item.precio, item.imagen));
+            cajas.push(new Caja(item.id, item.nombre, item.precio, item.imagen));
         }
 
         //GUARDAR ARRAY cajas EN EL LOCAL STORAGE
@@ -44,7 +44,7 @@ function agregarCaja(id){
   }
 
 //FUNCION PARA CONSTRUIR CADA caja DENTRO DEL ARRAY "cajas"
-function caja(id, nombre, precio, imagen){
+function Caja(id, nombre, precio, imagen){
 
     this.id = parseInt(id);
     this.nombre = nombre;
@@ -53,18 +53,18 @@ function caja(id, nombre, precio, imagen){
 
     // Agregar item al carrito y al Local Storage
     this.agregarCarrito = function(){
-        carrito.push(new caja(this.id, this.nombre, this.precio));
+        carrito.push(new Caja(this.id, this.nombre, this.precio));
         
         
         //Actualizar en el Local Storage
         carritoJSON = JSON.stringify(carrito);
-        localStorage.setItem("carrito", carritoJSON);
+        localStorage.setItem(carrito, carritoJSON);
         
         // Numero de items en el icono del carrito
         actualizarNumeroCarrito();
         
         localStorage.setItem( JSON.stringify(carrito),carrito)
-
+                        
     }
     
 }
