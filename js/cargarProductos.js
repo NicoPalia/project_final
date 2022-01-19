@@ -39,9 +39,9 @@ $.getJSON(url, function(response, state){
 });
 
 function agregarCaja(id){
-  carrito.push(cajas[id]);
-  $("#numero-productos")[0].innerHTML = carrito.length;
-}
+    carrito.push(cajas[id]);
+    $("#numero-productos")[0].innerHTML = carrito.length;
+  }
 
 //FUNCION PARA CONSTRUIR CADA caja DENTRO DEL ARRAY "cajas"
 function caja(id, nombre, precio, imagen){
@@ -53,13 +53,19 @@ function caja(id, nombre, precio, imagen){
 
     // Agregar item al carrito y al Local Storage
     this.agregarCarrito = function(){
-        carrito.push(new caja(this. id, this.nombre, this.precio));
-
+        carrito.push(new caja(this.id, this.nombre, this.precio));
+        
+        
         //Actualizar en el Local Storage
         carritoJSON = JSON.stringify(carrito);
         localStorage.setItem("carrito", carritoJSON);
-
+        
         // Numero de items en el icono del carrito
         actualizarNumeroCarrito();
+        
+        localStorage.setItem( JSON.stringify(carrito),carrito)
+
     }
+    
 }
+
